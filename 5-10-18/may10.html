@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#may10 #header span{
+				display: inline-block;
+				width: 35%;
+				margin-left: 15%;
+			}	
+	
+		#may10 #header span:last-child{
+				width: 35%;
+				margin-left: 0;
+			}
+		#may10 .header-avator{
+			width:  100px;
+		    position: relative;
+    		top: 15px;
+    		right: 20px;
+		}
+		#may10 .header-avator.grouped{
+			right: 0px;
+		}
+
+		#may10 .subtitle-avator{
+		    width: 200px;
+		    position: relative;
+		    left: -50px;
+		    top: 40px;
+		}
+
+		#may10 .subtitle-avator.grouped{
+			left:  -10px;
+		}
+
+		#may10 h2{
+			text-align:  center;
+			font-weight: normal;
+		}
+
+		@media (max-width: 1240px){
+			#may10 #header span{
+				width: 40%;
+				margin-left: 15%;
+			}
+			#may10 #header span:last-child{
+				width: 40%;
+				margin-left: 0;
+			}
+		}
+		@media (max-width: 1030px){
+			#may10 #header span{
+				width: 45%;
+				margin-left: 5%;
+			}
+			#may10 #header span:last-child{
+				width: 45%;
+				margin-left: 0;
+			}
+		}
+		@media (max-width: 930px){
+			#may10 #header span{
+				width: 45%;
+				margin-left: 3%;
+			}
+			#may10 #header span:last-child{
+				width: 45%;
+				margin-left: 0;
+			}
+		}
+		@media (max-width: 830px){
+			#may10 #header span{
+				display: block;
+				width: 100%;
+				margin-left: 20%;
+			}
+			#may10 #header span:last-child{
+				width: 100%;
+				margin-left: 20%;
+			}
+		}
+	
+	</style>
+</head>
+<body>
+<div id="may10" style="font-family: 'Brandon Grotesque'; line-height: 2">
+<!-- title of release -->
+	<div style="text-align: center;">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Lightcloud-Vertical.png" style="max-width: 100px; width: 100%" >
+	</div>
+
+	<div id="header" style="padding: 15px; background: rgb(215,215,215); text-align: center;" >
+		<h1>
+			<p>Lightcloud Release Notes: May, 10 2018</p>
+		</h1>
+		<p>Today’s launch is full of powerful new features:</p>
+
+		<span >
+			<ul style="list-style: none; text-align: left; list-style-position: inside;">
+				<li><img class="header-avator" src="https://lightcloud.com/release-notes/5-10-18/Fault Notifications.png">Fault Notifications</li>
+				<li><img class="header-avator grouped" src="https://lightcloud.com/release-notes/5-10-18/Grouped Sensors.png">Grouped Sensor</li>
+			
+			</ul>
+		</span>
+
+		<span>
+			<ul style="list-style: none; text-align: left;list-style-position: inside;">
+				<li><img class="header-avator" src="https://lightcloud.com/release-notes/5-10-18/Closed Loop Daylighting.png">Closed Loop Daylighting</li>
+				<li><img class="header-avator" src="https://lightcloud.com/release-notes/5-10-18/Faster Power Up.png">Faster Power Up for Controller</li>
+		
+			</ul>
+		</span>
+	</div>
+
+	<img class="subtitle-avator" src="https://lightcloud.com/release-notes/5-10-18/Fault Notifications.png">
+	<h1>
+		<p style="margin: 20px 0; font-weight: bold; font-size: 20px">Fault Notifications</p>
+	</h1>
+
+
+	<p>Lightcloud can send you an email alert whenever a Zone is experiencing irregular energy consumption.  Now, each Zone can be configured for Fault Notification with adjustable thresholds – perfect for a Device controlling multiple fixtures.  Configuration instructions below.</p>
+
+
+	<img class="subtitle-avator grouped" src="https://lightcloud.com/release-notes/5-10-18/Grouped Sensors.png">
+	<h1>
+		<p style="margin: 20px 0; font-weight: bold; font-size: 20px">Grouped Sensors</p>
+	</h1>
+
+
+	<p>Sensors can now be grouped together to act like a single Sensor.  For example, if a large room has 4 Sensors, Group Vacancy will keep all of the lights on until all of the Sensors register vacant. Configuration instructions below.</p>
+
+	<img class="subtitle-avator" src="https://lightcloud.com/release-notes/5-10-18/Closed Loop Daylighting.png">
+	<h1>
+		<p style="margin: 20px 0; font-weight: bold; font-size: 20px">Closed Loop Daylighting</p>
+	</h1>
+
+
+	<p>Lightcloud is now capable of closed loop Daylight harvesting on Standard and High Bay Sensors.<br />
+		Closed loop Daylighting optimizes the light level in a location by dimming one or more luminaires to account for natural and artificial light in a space. When there’s a lot of natural light in a space, the lights are dimmed until the optimal light level is reached.  Configuration instructions below.  
+	</p>
+
+	<img class="subtitle-avator" src="https://lightcloud.com/release-notes/5-10-18/Faster Power Up.png">
+	<h1>
+		<p style="margin: 20px 0; font-weight: bold; font-size: 20px">Faster Power Up for Controller</p>
+	</h1>
+	<p>Controllers now power up 10x faster than before.</p>
+
+
+	<div id="header2" style="padding: 15px; background: rgb(215,215,215); text-align: center; margin-top:30px" >
+		<h1>
+			<p>Configuration Instructions</p>
+		</h1>
+	</div>
+
+
+
+
+	<img class="subtitle-avator" src="https://lightcloud.com/release-notes/5-10-18/Fault Notifications.png">
+
+	<h1>
+		<p style="margin: 20px 0; font-weight: bold; font-size: 20px">Fault Notifications</p>
+	</h1>
+	<p>Set an Alert Threshold in Device Settings.<br />
+	Please note, the alert Threshold is the % change from normal consumption and requires Power Monitoring to be turned on.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Fault Notifcations - 1.png" style="max-width: 600px; width: 100%" >
+	</div>
+	<p>After setting the Alert Threshold, turn on fault detection.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Fault Notifcations - 2.png" style="max-width: 600px; width: 100%" >
+	</div>
+	<p>To receive alerts, one or more users or emails needs to be subscribed.  To configure alerts, go to Fault Notifications under the settings menu and select users or enter email addresses to receive alerts.  Click on Select Sites.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Fault Notifcations - 3.png" style="max-width: 600px; width: 100%" >
+	</div>
+	<p>Select the Site or Sites the user is subscribing and press Done.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Fault Notifcations - 4.png" style="max-width: 600px; width: 100%" >
+	</div>
+	<p>The top of the page will show all subscribed users.  To unsubscribe a user, select Delete.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Fault Notifcations - 5.png" style="max-width: 600px; width: 100%" >
+	</div>
+
+
+	<img class="subtitle-avator grouped" src="https://lightcloud.com/release-notes/5-10-18/Grouped Sensors.png">
+
+	<h1>
+		<p style="margin: 20px 0; font-weight: bold; font-size: 20px">Grouped Sensors</p>
+	</h1>
+
+	<p>Select a Sensor and select Browse next to Browse All Ceiling Sensor Automations.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Group Vacancy 1.png" style="max-width: 600px; width: 100%" >
+	</div>
+	<p>Find the vacancy automation that you’d like to group with other Sensors and select Devices.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Group Vacancy 2.png" style="max-width: 600px; width: 100%" >
+	</div>
+	<p>Select the Sensors you’d like to group and Done.  Select Save to preserve the new Grouped Vacancy.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Group Vacancy 3.png" style="max-width: 600px; width: 100%" >
+	</div>
+
+
+	<img class="subtitle-avator" src="https://lightcloud.com/release-notes/5-10-18/Closed Loop Daylighting.png">
+
+	<h1>
+		<p style="margin: 20px 0; font-weight: bold; font-size: 20px">Closed Loop Daylighting</p>
+	</h1>
+
+	<p>Select Add next to Add Daylighting.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Close Loop Daylighting 1.png" style="max-width: 600px; width: 100%" >
+	</div>
+	<p>Select the footcandles you’d like to maintain, Add Zones, and Save.</p>
+	<div style="text-align: center; margin-top: 20px">
+		<img src="https://lightcloud.com/release-notes/5-10-18/Close Loop Daylighting 2.png" style="max-width: 600px; width: 100%" >
+	</div>
+
+</div>
+</body>
+</html>
